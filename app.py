@@ -24,5 +24,5 @@ if st.button("Predict"):
     input_df = pd.DataFrame([input_dict])
     predictions_df = predict_model(estimator=model, data=input_df)
     prediction = predictions_df.iloc[0]['prediction_label']
-    st.markdown("Your insurance charges are predcited to be: ")
+    st.markdown("Your insurance charges are predicted to be: ")
     st.markdown(prediction)
